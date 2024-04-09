@@ -28,6 +28,13 @@ public class Program {
         for (Seller obj : list) {
             System.out.println(obj);
         }
+
+        System.out.println("\n Teste 4: seller insert");
+        Seller seller1 = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.00, department);
+        sellerDao.insert(seller1);
+
+            System.out.println("Inserted! New id = "+ seller1.getId());
+
     }
 }
 
